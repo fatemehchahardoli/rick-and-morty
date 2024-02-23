@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import routes from "./routes";
+import { useRoutes } from "react-router-dom";
+import "./App.css";
 
 function App() {
-  return (
-    <h1 className="text-3xl font-bold underline text-red-500">
-    Hello world!
-  </h1>
-  );
+  const router = useRoutes(routes);
+   return <>{router}</>;
 }
 
 export default App;
