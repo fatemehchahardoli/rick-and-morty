@@ -20,7 +20,7 @@ const Navbar = () => {
                />
             </symbol>
          </svg>
-         <nav className="flex min-h-24">
+         <nav className="flex items-center justify-between px-7 min-h-24 bg-black">
             {/* logo */}
             <div>
                <img src="/images/logo/logo.png" alt="logo"></img>
