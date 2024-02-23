@@ -4,29 +4,14 @@ const Navbar = () => {
    return (
       <>
          {/* list svgs */}
-         <svg class="hidden">
-            <symbol
-               id="search"
-               xmlns="http://www.w3.org/2000/svg"
-               fill="none"
-               viewBox="0 0 24 24"
-               stroke-width="1.5"
-               stroke="currentColor"
-            >
-               <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-               />
-            </symbol>
-         </svg>
-         <nav className="flex items-center justify-between px-7 min-h-24 bg-black">
+       
+         <nav className="flex w-full items-center justify-between px-2 md:px-7 h-14 md:min-h-24 bg-black ">
             {/* logo */}
             <div>
-               <img src="/images/logo/logo.png" alt="logo"></img>
+               <img src="/images/logo/logo.png" className="w-24" alt="logo"></img>
             </div>
             {/* search input*/}
-            <div className="flex items-center justify-between px-4 bg-gray-700 w-[409px] h-[35px] rounded-md">
+            <div className="flex items-center justify-between  px-2 md:px-4 bg-gray-700 w-18 md:w-[409px] md:h-[35px] rounded-md">
                {/* search form */}
                <form action="#" autoComplete="off">
                   <input
@@ -41,12 +26,17 @@ const Navbar = () => {
                </svg>
             </div>
             {/* login button */}
-            <div>
-               <a href="#" className="text-white bg-blue-600 p-4 rounded-md font-MorabbaLight">
+            <div className="hidden md:inline-block">
+               <a
+                  href="#"
+                  className="text-white bg-blue-600 p-2 md:p-4 rounded-md font-MorabbaLight "
+               >
                   ورود/ثبت نام
                </a>
             </div>
          </nav>
+
+        
       </>
    );
 };
