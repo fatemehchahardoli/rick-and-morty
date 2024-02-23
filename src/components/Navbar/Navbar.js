@@ -3,15 +3,17 @@ import React from "react";
 const Navbar = () => {
    return (
       <>
-         {/* list svgs */}
-       
          <nav className="flex w-full items-center justify-between px-2 md:px-7 h-14 md:min-h-24 bg-black ">
             {/* logo */}
             <div>
-               <img src="/images/logo/logo.png" className="w-24" alt="logo"></img>
+               <img
+                  src="/images/logo/logo.png"
+                  className="w-24 md:w-full"
+                  alt="logo"
+               ></img>
             </div>
             {/* search input*/}
-            <div className="flex items-center justify-between  px-2 md:px-4 bg-gray-700 w-18 md:w-[409px] md:h-[35px] rounded-md">
+            <div className="flex items-center justify-between px-2 md:px-4 bg-gray-700 w-18 md:w-[409px] md:h-[35px] rounded-md">
                {/* search form */}
                <form action="#" autoComplete="off">
                   <input
@@ -35,8 +37,6 @@ const Navbar = () => {
                </a>
             </div>
          </nav>
-
-        
       </>
    );
 };
