@@ -39,4 +39,13 @@
          url("../public/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
       font-display: swap;
    }
+   main{
+      /* background-image: url("../public/images/main/MV5BZjRjOTFkOTktZWUzMi00YzMyLThk\ \(1\).jpg");
+      background-image: rgba(0,0,0, 0.4);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px); */
+
+   }
 }

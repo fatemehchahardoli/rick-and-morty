@@ -3,15 +3,15 @@ import React from "react";
 const MainSection = () => {
    return (
       <>
-         <main className="min-h-screen w-full md:pt-20 md:px-40">
+         <main className="min-h-screen w-full md:pt-20 md:px-40 bg-gray-700">
             <section>
                {/* Explanation about the animation */}
-               <div className="flex gap-x-3 mx-auto">
+               <div className="flex gap-x-4 mx-auto text-white">
                   {/*image */}
                   <div className="pt-3">
                      <img
                         src="/images/main/MV5BZjRjOTFkOTktZWUzMi00YzMyLThk (1).jpg"
-                        className="w-[285px] h-[415px] rounded-xl "
+                        className="w-[285px] h-[415px] rounded-xl hover:grayscale hover:transition-all cursor-pointer" 
                         alt="rick and morty"
                      ></img>
                   </div>
@@ -28,7 +28,7 @@ const MainSection = () => {
                      </div>
                      {/* option */}
                      <div className="flex my-4">
-                        <span className="flex items-center justify-center m-2 rounded-lg w-16 h-8 border bg-yellow-500 font-MorabbaBold text-lg">
+                        <span className="flex items-center justify-center m-2 text-black rounded-lg w-16 h-8 border bg-yellow-500 font-MorabbaBold text-lg">
                            IMDb
                         </span>
                         <span className="flex items-center justify-center m-2 rounded-lg w-8  h-8  ">
@@ -121,8 +121,8 @@ const MainSection = () => {
                      </div>
                   </div>
                </div>
-               <div className="mt-3 font-Dana text-base">
-                  <p >
+               <div className="mt-4 font-Dana text-base text-white">
+                  <p>
                      ریک سانچز دانشمند نابغهٔ الکلی است که به تازگی در خانهٔ
                      خانوادهٔ دخترش، بِث که یک دامپزشک و جراح قلب اسب است، اقامت
                      گزیده. او اوقاتش را حول کار بر روی پروژه‌های محرمانهٔ علمی
