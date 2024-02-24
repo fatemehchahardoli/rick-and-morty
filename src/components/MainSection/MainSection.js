@@ -11,12 +11,12 @@ const MainSection = () => {
                   <div className="flex justify-center md:pt-3">
                      <img
                         src="/images/main/MV5BZjRjOTFkOTktZWUzMi00YzMyLThk (1).jpg"
-                        className="w-[285px] h-[415px] rounded-xl hover:grayscale hover:transition-all cursor-pointer" 
+                        className="w-[285px] h-[415px] rounded-xl hover:grayscale hover:transition-all cursor-pointer"
                         alt="rick and morty"
                      ></img>
                   </div>
                   {/* description */}
-                  <div className="mt-3 md:mt-0"> 
+                  <div className="mt-3 md:mt-0">
                      {/* title */}
                      <div className="flex flex-col text-center md:text-start">
                         <h2 className="font-DanaDemiBold text-2xl font-bold">
@@ -33,7 +33,9 @@ const MainSection = () => {
                         </span>
                         <span className="flex items-center justify-center m-2 rounded-lg w-8  h-8 cursor-pointer ">
                            10/
-                           <span className="font-MorabbaBold text-xl cursor-pointer">9.1</span>
+                           <span className="font-MorabbaBold text-xl cursor-pointer">
+                              9.1
+                           </span>
                         </span>
                         <span className="flex items-center justify-center m-2 rounded-lg w-8  h-8 border border-gray-300 cursor-pointer">
                            13+
@@ -121,6 +123,7 @@ const MainSection = () => {
                      </div>
                   </div>
                </div>
+               {/* text */}
                <div className=" mt-10 px-4 md:mt-3 font-Dana md:text-base text-xs text-white">
                   <p>
                      ریک سانچز دانشمند نابغهٔ الکلی است که به تازگی در خانهٔ
