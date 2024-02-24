@@ -28,20 +28,20 @@ const MainSection = () => {
                      </div>
                      {/* option */}
                      <div className="flex flex-wrap justify-center my-4">
-                        <span className="flex items-center justify-center m-2 text-black rounded-lg w-16 h-8 border bg-yellow-500 font-MorabbaBold text-lg">
+                        <span className="flex items-center justify-center m-2 text-black rounded-lg w-16 h-8 border bg-yellow-500 font-MorabbaBold text-lg cursor-pointer">
                            IMDb
                         </span>
-                        <span className="flex items-center justify-center m-2 rounded-lg w-8  h-8  ">
+                        <span className="flex items-center justify-center m-2 rounded-lg w-8  h-8 cursor-pointer ">
                            10/
-                           <span className="font-MorabbaBold text-xl">9.1</span>
+                           <span className="font-MorabbaBold text-xl cursor-pointer">9.1</span>
                         </span>
-                        <span className="flex items-center justify-center m-2 rounded-lg w-8  h-8 border border-gray-300">
+                        <span className="flex items-center justify-center m-2 rounded-lg w-8  h-8 border border-gray-300 cursor-pointer">
                            13+
                         </span>
-                        <span className="flex items-center justify-center m-2 rounded-lg w-28 h-8  border border-gray-300">
+                        <span className="flex items-center justify-center m-2 rounded-lg w-28 h-8  border border-gray-300 cursor-pointer">
                            سافت ساب
                         </span>
-                        <span className="flex items-center justify-center m-2 rounded-lg w-28 h-8  border border-gray-300">
+                        <span className="flex items-center justify-center m-2 rounded-lg w-28 h-8  border border-gray-300 cursor-pointer">
                            Adult swim
                         </span>
                      </div>
