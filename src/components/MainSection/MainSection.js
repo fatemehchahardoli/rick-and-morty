@@ -3,12 +3,12 @@ import React from "react";
 const MainSection = () => {
    return (
       <>
-         <main className="min-h-screen w-full md:pt-20 md:px-40 bg-gray-700">
+         <main className="min-h-screen w-full px-4  md:pt-20 lg:px-40 bg-gray-700">
             <section>
                {/* Explanation about the animation */}
-               <div className="flex gap-x-4 mx-auto text-white">
+               <div className="flex flex-col md:flex-row  gap-x-4 mx-auto text-white">
                   {/*image */}
-                  <div className="pt-3">
+                  <div className="flex justify-center md:pt-3">
                      <img
                         src="/images/main/MV5BZjRjOTFkOTktZWUzMi00YzMyLThk (1).jpg"
                         className="w-[285px] h-[415px] rounded-xl hover:grayscale hover:transition-all cursor-pointer" 
@@ -16,9 +16,9 @@ const MainSection = () => {
                      ></img>
                   </div>
                   {/* description */}
-                  <div>
+                  <div className="mt-3 md:mt-0"> 
                      {/* title */}
-                     <div className="flex flex-col">
+                     <div className="flex flex-col text-center md:text-start">
                         <h2 className="font-DanaDemiBold text-2xl font-bold">
                            Rick and Morty
                         </h2>
@@ -27,7 +27,7 @@ const MainSection = () => {
                         </span>
                      </div>
                      {/* option */}
-                     <div className="flex my-4">
+                     <div className="flex flex-wrap justify-center my-4">
                         <span className="flex items-center justify-center m-2 text-black rounded-lg w-16 h-8 border bg-yellow-500 font-MorabbaBold text-lg">
                            IMDb
                         </span>
@@ -47,7 +47,7 @@ const MainSection = () => {
                      </div>
                      {/* wrapper for period of time && Manufacturing Country ... */}
                      <div className="flex flex-col">
-                        <div className="flex ">
+                        <div className="flex flex-wrap justify-center">
                            <div className="flex h-5 items-center px-3 border-l-2">
                               <svg className="w-4 h-4 ml-1 text-gray-500">
                                  <use href="#clock"></use>
@@ -74,7 +74,7 @@ const MainSection = () => {
                               </span>
                            </div>
                         </div>
-                        <div className="flex h-5 items-center px-3 space-y-8">
+                        <div className="flex h-5 items-center justify-center px-3 space-y-8">
                            <svg className="w-4 h-4 ml-1 mt-5 text-gray-500">
                               <use href="#video"></use>
                            </svg>
@@ -87,14 +87,14 @@ const MainSection = () => {
                      <div className="flex h-4 items-center justify-around mt-24">
                         <a
                            href="#"
-                           className="inline-block px-8 py-4 bg-green-700 text-white font-Dana text-sm rounded-xl hover:bg-green-600 transition-all"
+                           className="inline-block px-4 py-2 md:px-8 md:py-4 bg-green-700 text-white font-Dana text-sm rounded-xl hover:bg-green-600 transition-all"
                         >
                            وضعیت:اتمام پخش
                         </a>
                         {/* notification */}
                         <a
                            href="#"
-                           className="inline-block px-4 py-4 bg-gray-500 text-white hover:text-orange-400 rounded-xl "
+                           className="inline-block px-2 py-2 md:px-4 md:py-4 bg-gray-500 text-white hover:text-orange-400 rounded-xl "
                         >
                            <svg className="h-5 w-5">
                               <use href="#notification"></use>
@@ -103,7 +103,7 @@ const MainSection = () => {
                         {/* save */}
                         <a
                            href="#"
-                           className="inline-block px-4 py-4 bg-gray-500  text-white hover:text-orange-400  rounded-xl"
+                           className="inline-block  px-2 py-2 md:px-4 md:py-4 bg-gray-500  text-white hover:text-orange-400  rounded-xl"
                         >
                            <svg className="h-5 w-5 fill-white">
                               <use href="#save"></use>
@@ -112,7 +112,7 @@ const MainSection = () => {
                         {/* heart */}
                         <a
                            href="#"
-                           className="inline-block px-4 py-4 bg-gray-500 text-white hover:text-orange-400 rounded-xl"
+                           className="inline-block  px-2 py-2 md:px-4 md:py-4 bg-gray-500 text-white hover:text-orange-400 rounded-xl"
                         >
                            <svg className="h-5 w-5 fill-white">
                               <use href="#heart"></use>
@@ -121,7 +121,7 @@ const MainSection = () => {
                      </div>
                   </div>
                </div>
-               <div className="mt-4 font-Dana text-base text-white">
+               <div className=" mt-10 px-4 md:mt-3 font-Dana md:text-base text-xs text-white">
                   <p>
                      ریک سانچز دانشمند نابغهٔ الکلی است که به تازگی در خانهٔ
                      خانوادهٔ دخترش، بِث که یک دامپزشک و جراح قلب اسب است، اقامت
