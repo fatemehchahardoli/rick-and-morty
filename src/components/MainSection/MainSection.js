@@ -1,10 +1,10 @@
 import React from "react";
-
+import Card from "../Card/Card";
 const MainSection = () => {
    return (
       <>
-         <main className="min-h-screen w-full px-4  md:pt-20 lg:px-40 bg-gray-700">
-            <section>
+         <main>
+            <section className="min-h-screen w-full px-4  md:pt-20 lg:px-40 bg-gray-700">
                {/* Explanation about the animation */}
                <div className="flex flex-col md:flex-row  gap-x-4 mx-auto text-white">
                   {/*image */}
@@ -137,6 +137,7 @@ const MainSection = () => {
                   </p>
                </div>
             </section>
+
          </main>
       </>
    );
