@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
+
+ 
 const MainSection = () => {
    return (
       <>
@@ -139,11 +141,10 @@ const MainSection = () => {
                </div>
             </section>
 
-            {/* product section */}
+            {/* movie section */}
             <section className="w-full bg-gray-700">
-            
                <div className="container">
-                     {/* header section*/}
+                  {/* header section*/}
                   <div className="text-center">
                      <h2 className="text-yellow-500  font-MorabbaBold text-2xl ">
                         پربازدید ترین ها
@@ -152,17 +153,18 @@ const MainSection = () => {
                   </div>
 
                   {/* body section */}
-                  <div className=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pt-5 gap-3.5 md:gap-5 child:h-[200px] md:child:h[460px]">
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
+                  <div className=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pt-5 gap-3.5 md:gap-5 child:h-[200px] md:child:h-auto">
+                     <Card/>
                   </div>
+                  {/* <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div> */}
                </div>
+              
             </section>
          </main>
       </>
