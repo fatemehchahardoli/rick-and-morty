@@ -4,6 +4,7 @@ const MainSection = () => {
    return (
       <>
          <main>
+            {/* home section */}
             <section className="min-h-screen w-full px-4  md:pt-20 lg:px-40 bg-gray-700">
                {/* Explanation about the animation */}
                <div className="flex flex-col md:flex-row  gap-x-4 mx-auto text-white">
@@ -138,6 +139,31 @@ const MainSection = () => {
                </div>
             </section>
 
+            {/* product section */}
+            <section className="w-full bg-gray-700">
+            
+               <div className="container">
+                     {/* header section*/}
+                  <div className="text-center">
+                     <h2 className="text-yellow-500  font-MorabbaBold text-2xl ">
+                        پربازدید ترین ها
+                     </h2>
+                     <span className=" inline-block h-1 w-16 rounded-sm bg-white"></span>
+                  </div>
+
+                  {/* body section */}
+                  <div className=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pt-5 gap-3.5 md:gap-5 child:h-[200px] md:child:h[460px]">
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                     <div className="bg-white shadow-md rounded-2xl"></div>
+                  </div>
+               </div>
+            </section>
          </main>
       </>
    );
