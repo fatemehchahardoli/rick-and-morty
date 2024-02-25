@@ -5,6 +5,7 @@ const Card = () => {
       <>
          {/* wrapper card */}
          <div className="bg-white shadow-md rounded-2xl">
+          {/* image for movie */}
             <div className="h-64">
                <img
                   className=" w-full h-full object-cover object-center rounded-t-2xl"
@@ -12,6 +13,7 @@ const Card = () => {
                   alt="image rick abd morty"
                />
             </div>
+            {/* body card */}
             <div className="p-6">
                <div class="flex items-baseline">
                   <span className="inline-block bg-teal-200 text-teal-800 py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide">
