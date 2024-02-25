@@ -152,7 +152,7 @@ const MainSection = () => {
                   </div>
 
                   {/* body section */}
-                  <div className=" grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 pt-5 gap-3.5 md:gap-5 child:h-[300px] md:child:h-auto">
+                  <div className=" grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 pt-5 justify-center gap-3.5 md:gap-5 child:h-[300px] md:child:h-auto">
                      <Card /> <Card />
                   </div>
                </div>
