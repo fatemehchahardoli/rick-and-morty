@@ -1,13 +1,12 @@
 import React from "react";
 import Card from "../Card/Card";
 
- 
 const MainSection = () => {
    return (
       <>
-         <main>
+         <main className="bg-gray-700 pb-16 md:pb-8">
             {/* home section */}
-            <section className="min-h-screen w-full px-4  md:pt-20 lg:px-40 bg-gray-700">
+            <section className="h-auto w-full px-4 md:px-20  md:pt-20 lg:px-40 bg-gray-700">
                {/* Explanation about the animation */}
                <div className="flex flex-col md:flex-row  gap-x-4 mx-auto text-white">
                   {/*image */}
@@ -142,10 +141,10 @@ const MainSection = () => {
             </section>
 
             {/* movie section */}
-            <section className="w-full bg-gray-700">
+            <section className="w-full ">
                <div className="container">
                   {/* header section*/}
-                  <div className="text-center">
+                  <div className="text-center pt-20">
                      <h2 className="text-yellow-500  font-MorabbaBold text-2xl ">
                         پربازدید ترین ها
                      </h2>
@@ -153,18 +152,10 @@ const MainSection = () => {
                   </div>
 
                   {/* body section */}
-                  <div className=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pt-5 gap-3.5 md:gap-5 child:h-[200px] md:child:h-auto">
-                     <Card/>
+                  <div className=" grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 pt-5 gap-3.5 md:gap-5 child:h-[300px] md:child:h-auto">
+                     <Card /> <Card />
                   </div>
-                  {/* <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div>
-                     <div className="bg-white shadow-md rounded-2xl"></div> */}
                </div>
-              
             </section>
          </main>
       </>
