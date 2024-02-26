@@ -15,7 +15,7 @@ const Card = () => {
             </div>
             {/* body card */}
             <div className="md:p-6 p-2">
-               <div class="flex items-baseline">
+               <div className="flex items-baseline">
                   <span className="inline-block bg-teal-200 text-teal-800 py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide">
                      New
                   </span>
