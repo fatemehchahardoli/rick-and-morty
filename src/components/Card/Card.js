@@ -1,6 +1,8 @@
 import React from "react";
 import HalfRating from "../Rating/HalfRating";
+import useFetch from '../../hooks/useFetch';
 const Card = () => {
+   const {posts, isPending, error} = useFetch('https://rickandmortyapi.com/api/character')
    return (
       <>
          {/* wrapper card */}
