@@ -1,25 +1,25 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-
+import axios from 'axios'
 export default function useFetch(url) {
-    const [data, setdata] = useState(null)
-    const [isPending, setIsPending] = useState(true)
-    const [error, setError] = useState(null)
+    const [characters, setCharacters] = useState(null)
+    const [locations, setLocations] = useState(null)
+    const [episodes, setEpisodes] = useState(null)
+   
 
     useEffect(() => {
-        
-            fetch(url)
-                .then(res => res.json())
-                .then(datas => {
-                    setdata(datas)
-                    setIsPending(false)
-                    setError(null)
-                })
-                .catch(err => console.log(err.message))
-        
+        axios.all([
+            axios.get("https://rickandmortyapi.com/api/character"),
+            axios.get("https://rickandmortyapi.com/api/location"),
+            axios.get( "https://rickandmortyapi.com/api/episode")])
+            .then(axios.spread((ch,l,e)=>{
+                setCharacters(ch.data)
+                setLocations(l.data)
+                setEpisodes(e.data)
+            }))
 
     }, [])
 
-    return { data, isPending, error }
+    return {characters,locations,episodes};
 
 }
