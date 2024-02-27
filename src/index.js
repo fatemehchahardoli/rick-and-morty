@@ -7,11 +7,11 @@ import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-   <React.StrictMode>
+<>
     {/*for routing */}
       <BrowserRouter>
          <App />
       </BrowserRouter>
-   </React.StrictMode>
+  </>
 );
 reportWebVitals();
