@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
    return (
-      <footer className=" bg-black  text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-center">
+      <footer className="fixed bottom-0 right-0 left-0  bg-black  text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-center">
          <div className=" container flex items-center justify-center  border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
             <div className="flex justify-center">
                {/* links */}
