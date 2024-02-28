@@ -14,25 +14,49 @@ const Details = () => {
    }, []);
    return (
       <>
-         {console.log(characterDetails)}
          <Navbar />
-         
+
          <section className="min-h-screen">
-      
-      {/* image character */}
-      <div className="mx-auto flex min-h-screen max-w-screen-sm pt-14 justify-center">
-         <div className="h-96 w-[60rem] rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
-            <div className="flex h-full w-full items-center justify-center bg-gray-800 back">
-               <img
-                  src={characterDetails.image}
-                  className="object-cover  w-full h-full"
-                  alt="image"
-               />
+            {/* image character */}
+            <div className="mx-4  min-h-screen max-w-screen-sm pt-14 ">
+               <div className="h-96 w-[50rem] rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+                  <div className="flex h-full w-full items-center justify-center  bg-gray-800 back">
+                     <img
+                        src={characterDetails.image}
+                        className="object-fill  w-full h-full"
+                        alt="image"
+                     />
+                  </div>
+               </div>
+               <div className="pr-8 w-full flex justify-center gap-16 pt-9 ">
+                  <div className="leading-9">
+                     <span className="text-xl text-white">نام:</span>
+                     <span className="text-2xl text-white">
+                        {characterDetails.name}
+                     </span>
+                     <div className="leading-9">
+                        <span className="text-xl text-white">وضعیت:</span>
+                        <span className="text-xl text-white">
+                           {characterDetails.status}
+                        </span>
+                     </div>
+                  </div>
+
+                  <div className="leading-9">
+                     <span className="text-xl text-white">گونه ها:</span>
+                     <span className="text-xl text-white">
+                        {characterDetails.species}
+                     </span>
+                     <div className="leading-9">
+                        <span className="text-xl text-white"> ژانر:</span>
+                        <span className="text-xl text-white">
+                           {characterDetails.gender}
+                        </span>
+                     </div>
+                  </div>
+               </div>
             </div>
-         </div>
-      </div>
-     <h2>{characterDetails.name}</h2>
-   </section>
+         </section>
          <Footer />
       </>
    );
