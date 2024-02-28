@@ -21,7 +21,7 @@ const Card = ({ id,image, status, species, location }) => {
                   <span className="inline-block bg-teal-200 text-white py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide">
                      {status}
                   </span>
-                  <div className="ml-2 text-white text-xs uppercase font-semibold tracking-wide">
+                  <div className="mr-4 text-white text-xs uppercase font-semibold tracking-wide">
                      {species}
                   </div>
                </div>
