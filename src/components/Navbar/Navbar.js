@@ -20,7 +20,8 @@ const Navbar = () => {
                   <input
                      type="text"
                      placeholder="جستجوی سریع..."
-                     className="bg-transparent font-MorabbaLight"
+                     className="bg-transparent font-MorabbaLight border-none outline-0  focus:border-gray-700"
+                     
                   ></input>
                </form>
                {/* svg serch */}

@@ -144,15 +144,19 @@ const MainSection = () => {
             <section className="w-full ">
                <div className="container">
                   {/* header section*/}
-                  <div className="text-center pt-20">
-                     <h2 className="text-yellow-500  font-MorabbaBold text-2xl ">
-                        پربازدید ترین ها
-                     </h2>
-                     <span className=" inline-block h-1 w-16 rounded-sm bg-white"></span>
+                  <div className="text-center  pt-20 flex justify-center ">
+                     <div>
+                        <h2 className="text-yellow-500  font-MorabbaBold text-2xl ">
+                           پربازدید ترین ها
+                        </h2>
+                        <span className=" inline-block h-1 w-16 rounded-sm bg-white"></span>
+                     </div>
+                     <button className="w-20 h-12 bg-yellow-500 text-white rounded-xl mr-[10rem] hover:bg-yellow-300 transition-all">HUMAN</button>
+                     <button className="w-20 h-12 bg-yellow-500 text-white rounded-xl mr-5 hover:bg-yellow-300 transition-all">ALIEN</button>
                   </div>
 
                   {/* body section */}
-                 <Cards/>
+                  <Cards />
                </div>
             </section>
          </main>
