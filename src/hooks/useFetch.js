@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 export default function useFetch(url) {
     const [characters, setCharacters] = useState(null)
+    const [tempcharacters, settempCharacters] = useState(null)
     const [locations, setLocations] = useState(null)
     const [episodes, setEpisodes] = useState(null)
    

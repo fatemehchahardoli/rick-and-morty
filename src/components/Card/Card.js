@@ -1,7 +1,7 @@
 import React from "react";
 import HalfRating from "../Rating/HalfRating";
 import { Link } from "react-router-dom";
-const Card = ({ id,image, status, species, location }) => {
+const Card = ({ id,name,image, status, species, location }) => {
    return (
       <>
      <Link to={`/Details/${id}`}>
@@ -24,6 +24,10 @@ const Card = ({ id,image, status, species, location }) => {
                   <div className="mr-4 text-white text-xs uppercase font-semibold tracking-wide">
                      {species}
                   </div>
+               </div>
+    
+               <div className="mt-1 text-yellow-500">
+                  <h3 className="text-xl">{name}</h3>
                </div>
                <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
                   Last known location:

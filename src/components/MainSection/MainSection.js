@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Cards from "../Cards/Cards";
-
+import useFetch from "../../hooks/useFetch";
 const MainSection = () => {
+   const { characters, locations, episodes } = useFetch();
+   const [listCharacters, setlistCharacters] = useState([]);
+ 
+   //filtered human
+  const filterhandler=() => {
+         let filterResult = characters.results.filter((item) => {
+            return item.species
+               .includes("Human");
+         });
+     setlistCharacters(filterResult);
+   };
    return (
       <>
          <main className="bg-gray-700 pb-16 md:pb-8">
@@ -151,12 +162,19 @@ const MainSection = () => {
                         </h2>
                         <span className=" inline-block h-1 w-16 rounded-sm bg-white"></span>
                      </div>
-                     <button className="w-20 h-12 bg-yellow-500 text-white rounded-xl mr-[10rem] hover:bg-yellow-300 transition-all">HUMAN</button>
-                     <button className="w-20 h-12 bg-yellow-500 text-white rounded-xl mr-5 hover:bg-yellow-300 transition-all">ALIEN</button>
+                     <button
+                        onClick={filterhandler}
+                        className="w-20 h-12 bg-yellow-500 text-white rounded-xl mr-[10rem] hover:bg-yellow-300 transition-all"
+                     >
+                        HUMAN
+                     </button>
+                     <button className="w-20 h-12 bg-yellow-500 text-white rounded-xl mr-5 hover:bg-yellow-300 transition-all">
+                        ALIEN
+                     </button>
                   </div>
 
                   {/* body section */}
-                  <Cards />
+                  <Cards characters={listCharacters.length?listCharacters:characters?.results} />
                </div>
             </section>
          </main>
