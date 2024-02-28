@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import Detail from "../../components/Detail/Detail";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 const Details = () => {
