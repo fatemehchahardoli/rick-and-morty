@@ -79,10 +79,10 @@ const MainSection = () => {
                            </div>
                         </div>
                         <div className="flex h-5 items-center justify-center px-3 space-y-8">
-                           <svg className="w-4 h-4 ml-1 mt-5 text-gray-500">
+                           <svg className="w-4 h-4 ml-1 mt-7 text-gray-500">
                               <use href="#video"></use>
                            </svg>
-                           <span className="font-MorabbaLight">
+                           <span className="font-MorabbaLight mb-3">
                               کیفیت نمایش : BluRay WEB-DL
                            </span>
                         </div>
