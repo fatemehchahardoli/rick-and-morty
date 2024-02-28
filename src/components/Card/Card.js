@@ -1,14 +1,13 @@
 import React from "react";
 import HalfRating from "../Rating/HalfRating";
-import useFetch from '../../hooks/useFetch';
-const Card = ({image,status,species,locationName}) => {
-   
-
+import { Link } from "react-router-dom";
+const Card = ({ id,image, status, species, location }) => {
    return (
       <>
+     <Link to={`/Details/${id}`}>
          {/* wrapper card */}
          <div className="bg-slate-200 shadow-md rounded-2xl">
-          {/* image for movie */}
+            {/* image for movie */}
             <div className="md:h-64 h-36">
                <img
                   className=" w-full h-full object-cover object-center rounded-t-2xl"
@@ -23,16 +22,15 @@ const Card = ({image,status,species,locationName}) => {
                      {status}
                   </span>
                   <div className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
-                    {species}
+                     {species}
                   </div>
                </div>
                <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-               Last known location:
+                  Last known location:
                </h4>
 
                <div className="mt-1">
-                  <span>{locationName}</span>
-                  <span className="text-gray-600 text-sm">/ wk</span>
+                  <span>{location.name}</span>
                </div>
                <div className="mt-2 flex items-center">
                   {/* rating */}
@@ -42,7 +40,7 @@ const Card = ({image,status,species,locationName}) => {
                </div>
             </div>
          </div>
-   
+         </Link>
       </>
    );
 };
